@@ -23,6 +23,22 @@
             About
             </nuxt-link>
         </b-nav-item>
+        <b-nav-item>
+        <!-- Add v-if="loggedIn" to b-nav-item-dropdown tag below when vuex is working correctly -->
+          <b-nav-item-dropdown right>
+            <template #button-content>
+              <em>User</em>
+            </template>
+            <b-dropdown-item href="#">
+              Profile
+            </b-dropdown-item>
+            <b-dropdown-item>
+              <nuxt-link to="logout">
+                Sign Out
+              </nuxt-link>
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -30,5 +46,8 @@
 
 <script>
 export default {
+  // computed: {
+  //   ...mapState('auth', ['loggedIn'])
+  // }
 }
 </script>
