@@ -1,6 +1,14 @@
 <template>
-    <div >
-        <h1>This is the Tasks page</h1>
-        <h4>/pages/tasks/index.vue</h4>
-    </div>
+    <b-container>
+        <div>
+            <h1>This is the Tasks page</h1>
+        </div>
+        <b-row>
+            <b-col>
+                <b-card>
+                    <h4>Task Name</h4>
+                </b-card>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
