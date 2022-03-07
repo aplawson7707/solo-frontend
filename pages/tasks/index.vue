@@ -5,7 +5,7 @@
         </div>
         <b-row>
             <b-col>
-                <b-card>
+                <b-card class="mt-4">
                     <h4>Task Name</h4>
                 </b-card>
             </b-col>
