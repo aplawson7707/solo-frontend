@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="dark">
     <b-navbar-brand to="/">
-      <top-nav-icon />
+      <TopNavIcon />
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse" />
