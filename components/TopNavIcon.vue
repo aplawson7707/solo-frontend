@@ -16,7 +16,7 @@ export default {
       icon: {
         img: '/500x500Logo.png',
         alt: 'Solo Logo',
-        class: 'bg-dark rounded p-1'
+        class: 'object-scale-down h-20 w-20'
       }
     }
   },

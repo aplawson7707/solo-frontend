@@ -1,11 +1,19 @@
 export default {
   components: true,
 
+  // buildModules: [
+  //   '@nuxtjs/tailwindcss',
+  // ],
+
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth',
     '@nuxtjs/toast',
     'bootstrap-vue/nuxt',
+  ],
+
+  buildModules: [
+    '@nuxtjs/tailwindcss',
   ],
 
   axios: {
@@ -34,6 +42,10 @@ export default {
   
   router: {
       middleware: ['auth']
+  },
+
+  tailwindcss: {
+    viewer: true
   },
 
   toast: {
