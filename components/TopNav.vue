@@ -30,7 +30,9 @@
               <em>User</em>
             </template>
             <b-dropdown-item href="#">
-              Profile
+              <nuxt-link to="profile">
+                Profile
+              </nuxt-link>
             </b-dropdown-item>
             <b-dropdown-item>
               <nuxt-link to="logout">
