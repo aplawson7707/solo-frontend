@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="background">
     <TopNav />
     <Nuxt />
   </div>

@@ -1,42 +1,18 @@
 <template>
     <b-container>
-            <b-row>
-                <b-col cols="4">
-                    <b-card class="mt-4 text-center">
-                        <b-calendar v-model="value" value-as-date locale="en">
-                            <div class="d-flex" dir="ltr">
-                                <b-button
-                                    size="sm"
-                                    variant="outline-danger"
-                                    v-if="value"
-                                    @click="clearDate"
-                                >
-                                    Clear Date
-                                </b-button>
-                                
-                                <b-button
-                                    size="sm"
-                                    variant="outline-primary"
-                                    class="ml-auto"
-                                    @click="setToday"
-                                >
-                                    Set Today
-                                </b-button>
-                            </div>
-                        </b-calendar>
-                    </b-card>
-                </b-col>
+            <b-row align-v="stretch">
                 <b-col>
-                    <b-card title="My Tasks" class="mt-4">
+                    <b-card title="My Tasks" class="mt-4" bg-variant="dark">
                         <b-table
                             id="tasksTable"
                             ref="tasksTable"
                             class="text-center"
                             head-variant="dark"
-                            sticky-header="true"
+                            sticky-header="800"
                             :items="getTasks"
                             :fields="fields"
                             striped
+                            dark
                             hover
                         >
                             <template #cell(completed)="row">
@@ -98,13 +74,6 @@ export default {
                     }
                 })
             })
-        },
-        setToday() {
-            const now = new Date()
-            this.value = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-        },
-        clearDate() {
-            this.value = ''
         },
     },
 }

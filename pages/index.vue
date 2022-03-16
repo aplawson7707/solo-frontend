@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-jumbotron text-variant="dark" fluid>
+    <b-jumbotron bg-variant="dark" text-variant="light" fluid>
       <template #header>This is the Home page</template>
 
       <template #lead>
@@ -9,12 +9,32 @@
 
       <template>
         <div>
-          <b-button v-b-modal.modal-1>Launch demo modal</b-button>
+          <b-button v-b-modal.modal-center variant="outline-primary">Launch demo modal</b-button>
 
-          <b-modal id="modal-1" title="Example Modal">
+          <b-modal 
+            id="modal-center" 
+            title="Example Modal"
+            header-bg-variant="dark"
+            header-text-variant="primary"
+            header-border-variant="dark"
+            body-bg-variant="dark" 
+            body-text-variant="light"
+            footer-bg-variant="dark"
+            footer-text-variant="light"
+            footer-border-variant="dark"
+            content-class="shadow"
+            centered
+          >
             <p class="my-4">Hello from modal!</p>
 
-            <b-dropdown id="dropdown-1" text="Dropdown Button" class="m-md-2">
+            <b-dropdown
+              id="dropdown-1"
+              text="Dropdown Button"
+              class="m-md-2"
+              split
+              split-variant="outline-primary"
+              variant="primary"
+            >
               <b-dropdown-item>First Action</b-dropdown-item>
               <b-dropdown-item>Second Action</b-dropdown-item>
               <b-dropdown-item>Third Action</b-dropdown-item>
@@ -25,12 +45,10 @@
           </b-modal>
         </div>
       </template>
-
-      <hr class="my-4">
     </b-jumbotron>
 
     <b-container>
-      <b-card class="mt-4">
+      <b-card class="mt-4" bg-variant="secondary" text-variant="light">
         <NuxtLink to="/about">
                 About (internal link that belongs to the Nuxt App)
         </NuxtLink>
@@ -40,7 +58,7 @@
         </a>
       </b-card>
       
-      <b-card class="mt-4">
+      <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
         <p>
           "<strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
