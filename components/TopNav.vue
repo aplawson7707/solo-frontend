@@ -1,7 +1,7 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="dark">
-    <b-navbar-brand to="/">
-      <TopNavIcon />
+  <b-navbar toggleable="lg" type="light" variant="success">
+    <b-navbar-brand to="/" class="mx-4">
+      <h1>SOLO</h1>
     </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse" />
@@ -10,28 +10,31 @@
       <b-navbar-nav>
         <b-nav-item>
             <nuxt-link to="/" class="nav-link">
-            Home
+              <strong> Home </strong>
             </nuxt-link>
         </b-nav-item>
         <b-nav-item>
             <nuxt-link to="tasks" class="nav-link">
-            Tasks
+              <strong> Tasks </strong>
             </nuxt-link>
         </b-nav-item>
         <b-nav-item>
             <nuxt-link to="about" class="nav-link">
-            About
+              <strong> About </strong>
             </nuxt-link>
         </b-nav-item>
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-avatar class="mt-2 mr-4"></b-avatar>
         <b-nav-item>
         <!-- Add v-if="loggedIn" to b-nav-item-dropdown tag below when vuex is working correctly -->
-          <b-nav-item-dropdown right>
+          <b-nav-item-dropdown class="mr-4" right>
             <template #button-content>
-              <em>User</em>
+              <strong> User </strong>
             </template>
             <b-dropdown-item href="#">
               <nuxt-link to="profile">
-                Profile
+                <b-button variant="outline-primary"> Profile </b-button>
               </nuxt-link>
             </b-dropdown-item>
             <b-dropdown-item>

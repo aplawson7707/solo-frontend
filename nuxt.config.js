@@ -31,6 +31,10 @@ export default {
       login: '/login',
     },
   },
+
+  css: [
+    '~/assets/scss/_variables.scss',
+  ],
   
   router: {
       middleware: ['auth']
@@ -66,19 +70,5 @@ export default {
     icons: true,
     // bootstrapCSS: false, // Or `css: false`
     // bootstrapVueCSS: false // Or `bvCSS: false`
-    // componentPlugins: [
-    //     'LayoutPlugin',
-    //     'FormPlugin',
-    //     'FormCheckboxPlugin',
-    //     'FormInputPlugin',
-    //     'FormRadioPlugin',
-    //     'ToastPlugin',
-    //     'ModalPlugin',
-    // ],
-    // directivePlugins: [
-    //     'VBPopoverPlugin',
-    //     'VBTooltipPlugin',
-    //     'VBScrollspyPlugin'
-    // ],
   },
 }

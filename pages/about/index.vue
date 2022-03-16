@@ -2,11 +2,11 @@
   <b-container>
     <b-row class="pt-3">
       <b-col cols="7">
-        <b-card>
+        <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
             <h1>This is the About page</h1>
             <h4>/pages/about/index.vue</h4>
         </b-card>
-        <b-card class="mt-4">
+        <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
           <b-card-img
             :src="cardImage.img"
             max-width="500"
@@ -26,7 +26,7 @@
         </b-card>
       </b-col>
       <b-col cols="5">
-        <b-card>
+        <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
           <b-card-img
             :src="cardImage.img"
             style="height: 100; width: 100px;"
@@ -46,7 +46,7 @@
             </p>
           </b-card-body>
         </b-card>
-        <b-card>
+        <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
           <b-card-img
             :src="cardImage.img"
             style="height: 100; width: 100px;"
@@ -66,7 +66,7 @@
             </p>
           </b-card-body>
         </b-card>
-        <b-card>
+        <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
           <b-card-img
             :src="cardImage.img"
             style="height: 100; width: 100px;"
