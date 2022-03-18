@@ -1,6 +1,7 @@
 <template>
-  <div id="background">
+  <div>
     <TopNav />
     <Nuxt />
+    <Footer />
   </div>
 </template>

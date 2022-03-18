@@ -2,7 +2,12 @@
     <b-container>
             <b-row align-v="stretch">
                 <b-col>
-                    <b-card title="My Tasks" class="mt-4" bg-variant="dark">
+                    <b-card
+                        title="My Tasks"
+                        class="mt-4 mb-4 shadow"
+                        bg-variant="darker"
+                        text-variant="light"
+                    >
                         <b-table
                             id="tasksTable"
                             ref="tasksTable"

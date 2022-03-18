@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopNavLogin />
+    <!-- <TopNavLogin /> -->
     <Nuxt />
   </div>
 </template>

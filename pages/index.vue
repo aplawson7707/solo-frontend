@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-jumbotron bg-variant="dark" text-variant="light" fluid>
+    <b-jumbotron fluid>
       <template #header>This is the Home page</template>
 
       <template #lead>
@@ -48,7 +48,7 @@
     </b-jumbotron>
 
     <b-container>
-      <b-card class="mt-4" bg-variant="secondary" text-variant="light">
+      <b-card class="mt-4 mb-4" bg-variant="secondary" text-variant="light">
         <NuxtLink to="/about">
                 About (internal link that belongs to the Nuxt App)
         </NuxtLink>

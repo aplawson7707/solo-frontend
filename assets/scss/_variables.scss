@@ -4,12 +4,12 @@ html, body {
     padding: 0;
   }
 
-#background {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e1e;
-}
+// #background {
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     background-color: #1e1e1e;
+// }
 
 #login {
     // display: flex;
@@ -55,10 +55,12 @@ $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #61ff86 !default;
+$green:   #86c232 !default;
+$drkgrn:  #61892f !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
-$bground: #1e1e1e !default;
+$xdark:   #1e1e1e !default;
+$bground: #222629 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -75,7 +77,8 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-900
+    "gray-dark":  $gray-900,
+    "gray-xdark": $xdark
   ),
   $colors
 );
@@ -86,8 +89,9 @@ $success:       $green !default;
 $info:          $teal !default;
 $warning:       $orange !default;
 $danger:        $red !default;
-$light:         $gray-500 !default;
+$light:         $gray-400 !default;
 $dark:          $gray-900 !default;
+$darker:        $xdark !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -99,7 +103,8 @@ $theme-colors: map-merge(
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
-    "dark":       $dark
+    "dark":       $dark,
+    "darker":     $darker
   ),
   $theme-colors
 );
@@ -126,6 +131,7 @@ $dropdown-link-hover-color:         darken($gray-300, 5%) !default;
 $dropdown-link-hover-bg:            $gray-900 !default;
 
 $jumbotron-color:                   $gray-400 !default;
-$jumbotron-bg:                      $gray-800 !default;
+// $jumbotron-bg:                      $gray-800 !default;
+$jumbotron-bg:                      $xdark !default;
 
 @import "node_modules/bootstrap/scss/bootstrap";

@@ -5,17 +5,23 @@
                 md="6"
                 offset-md="3"
             >
+                <div
+                    class="fixed-top d-flex align-items-center justify-content-center"
+                    style="bottom: 0; overflow-y: auto"
+                >
                 <b-card
-                    bg-variant="dark"
+                    bg-variant="darker"
                     text-variant="light"
                     title="Sign In"
-                    class="mt-4"
+                    class="mx-auto mt-4 shadow"
                     align="center"
+                    style="width: 400px"
+                    border-variant="secondary"
                 >
                     <b-card
                         bg-variant="secondary"
                         text-variant="dark"
-                        class="mt-4"
+                        class="mt-4 shadow"
                         align="center"
                     >
                         <section class="login">
@@ -43,6 +49,7 @@
                         </section>
                     </b-card>
                 </b-card>
+                </div>
             </b-col>
         </b-row>
     </b-container>
