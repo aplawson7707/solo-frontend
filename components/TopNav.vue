@@ -19,6 +19,11 @@
             </nuxt-link>
         </b-nav-item>
         <b-nav-item>
+            <nuxt-link to="shoppingList" class="nav-link">
+              <strong> Shopping List </strong>
+            </nuxt-link>
+        </b-nav-item>
+        <b-nav-item>
             <nuxt-link to="about" class="nav-link">
               <strong> About </strong>
             </nuxt-link>
