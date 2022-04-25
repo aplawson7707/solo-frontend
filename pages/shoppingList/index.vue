@@ -115,7 +115,7 @@ export default {
   },
   methods: {
     getShoppingListItems() {
-      return this.$axios.get(`/api/fridayAPI/shopping_list/`).then((resp) => {
+      return this.$axios.get(`/api/fridayAPI/shopping_list/?active=true`).then((resp) => {
         this.shoppingList = resp.data.map((item) => {
           return {
             id: item.id,
