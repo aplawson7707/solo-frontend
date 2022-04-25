@@ -6,6 +6,7 @@ export default {
     '@nuxtjs/auth',
     '@nuxtjs/toast',
     'bootstrap-vue/nuxt',
+    'nuxt-material-design-icons-iconfont',
   ],
 
   axios: {
